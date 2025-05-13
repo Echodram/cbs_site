@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Center for Biblical Studies - Blog</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="font-sans bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center">
+                    <i class="fas fa-bible text-3xl text-amber-500 mr-2"></i>
+                    <span class="text-xl font-bold text-gray-800">Center for Biblical Studies</span>
+                </div>
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="index.html"
+                        class="nav-link text-gray-800 hover:text-amber-500 px-3 py-2 rounded-md text-sm font-medium transition duration-300">Home</a>
+                    <a href="blogs.html"
+                        class="nav-link text-gray-800 hover:text-amber-500 px-3 py-2 rounded-md text-sm font-medium transition duration-300">Blogs</a>
+                    <a href="values.html"
+                        class="nav-link text-gray-800 hover:text-amber-500 px-3 py-2 rounded-md text-sm font-medium transition duration-300">Contact
+                        Us</a>
+
+                    <div class="language-selector ml-4">
+                        <button class="flex items-center text-gray-800 hover:text-amber-500">
+                            <i class="fas fa-globe mr-1"></i>
+                            <span>English</span>
+                            <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                        </button>
+                        <div class="language-dropdown">
+                            <a href="#" class="flex items-center">
+                                <span class="mr-2">🇬🇧</span> English
+                            </a>
+                            <a href="#" class="flex items-center">
+                                <span class="mr-2">🇫🇷</span> Français
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button class="mobile-menu-button p-2 focus:outline-none">
+                        <i class="fas fa-bars text-gray-800 text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div class="mobile-menu hidden md:hidden bg-white">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="home.html"
+                    class="block px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:text-amber-500">Home</a>
+                <a href="blogs.html"
+                    class="block px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:text-amber-500">Blogs</a>
+                <a href="values.html"
+                    class="block px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:text-amber-500">Contact
+                    Us</a>
+                <div class="pt-2 border-t border-gray-200">
+                    <div class="flex items-center px-3 py-2">
+                        <i class="fas fa-globe mr-2 text-gray-800"></i>
+                        <span class="text-gray-800 mr-2">Language:</span>
+                        <select class="border border-gray-300 rounded px-2 py-1 text-sm">
+                            <option>English</option>
+                            <option>Français</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Blog Hero Section -->
+    <section id="blog-hero" class="blog-hero flex items-center justify-center text-center text-white relative">
+        <div class="px-4 max-w-4xl mx-auto">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6 animate-fade-in">Biblical Insights & Teachings</h1>
+            <p class="text-xl md:text-2xl mb-8">Explore our collection of articles, devotionals, and biblical commentary
+                from our faculty and guest contributors.</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#blogs"
+                    class="btn-primary bg-amber-500 hover:bg-amber-600 text-white font-bold py-3 px-6 rounded-full text-lg transition duration-300">
+                    <i class="fas fa-book-open mr-2"></i> Read Our Blogs
+                </a>
+                <a href="#contact-form"
+                    class="btn-primary bg-transparent hover:bg-white hover:text-gray-900 border-2 border-white text-white font-bold py-3 px-6 rounded-full text-lg transition duration-300">
+                    <i class="fas fa-pen mr-2"></i> Contribute an Article
+                </a>
+            </div>
+        </div>
+        <div class="absolute bottom-10 left-0 right-0 text-center">
+            <a href="#blogs" class="text-white animate-bounce">
+                <i class="fas fa-chevron-down text-3xl"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Blogs Section -->
+    <section id="blogs" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">From Our Blog</h2>
+                <div class="w-20 h-1 bg-amber-500 mx-auto"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto mt-4">Insights, devotionals, and biblical teaching from our
+                    faculty and guest contributors.</p>
+
+                <!-- Blog Filter Buttons -->
+                <div class="flex justify-center mt-8 space-x-4">
+                    <button
+                        class="filter-btn active px-6 py-2 rounded-full border border-amber-500 text-amber-500 hover:bg-amber-500 hover:text-white transition duration-300"
+                        data-filter="all">
+                        <i class="fas fa-th-list mr-2"></i> All Blogs
+                    </button>
+                    <button
+                        class="filter-btn px-6 py-2 rounded-full border border-amber-500 text-amber-500 hover:bg-amber-500 hover:text-white transition duration-300"
+                        data-filter="article">
+                        <i class="fas fa-newspaper mr-2"></i> Articles
+                    </button>
+                    <button
+                        class="filter-btn px-6 py-2 rounded-full border border-amber-500 text-amber-500 hover:bg-amber-500 hover:text-white transition duration-300"
+                        data-filter="travel">
+                        <i class="fas fa-map-marked-alt mr-2"></i> Travels
+                    </button>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Article Blogs -->
+                <div class="blog-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300"
+                    data-category="article">
+                    <img src="https://images.unsplash.com/photo-1454165804606-3c3b2d5d9845?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                        alt="Bible Study" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center text-sm text-gray-500 mb-2">
+                            <i class="fas fa-user mr-2 text-amber-500"></i>
+                            <span>Dr. Michael Johnson</span>
+                            <span class="mx-2">•</span>
+                            <i class="fas fa-calendar mr-2 text-amber-500"></i>
+                            <span>May 12, 2023</span>
+                            <span class="mx-2">•</span>
+                            <span class="text-amber-500">Article</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">The Power of Context in Biblical Interpretation
+                        </h3>
+                        <p class="text-gray-600 mb-4">Understanding the historical and literary context of Scripture is
+                            essential for accurate interpretation and application...</p>
+                        <div class="flex justify-between items-center">
+                            <a href="#"
+                                class="text-amber-500 font-medium hover:text-amber-600 transition duration-300">Read
+                                More <i class="fas fa-arrow-right ml-1"></i></a>
+                            <span class="text-sm text-gray-500"><i class="fas fa-clock mr-1"></i> 8 min read</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="blog-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300"
+                    data-category="article">
+                    <img src="https://images.unsplash.com/photo-1503945438517-f65904c7f1b9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                        alt="Prayer" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center text-sm text-gray-500 mb-2">
+                            <i class="fas fa-user mr-2 text-amber-500"></i>
+                            <span>Pastor Sarah Williams</span>
+                            <span class="mx-2">•</span>
+                            <i class="fas fa-calendar mr-2 text-amber-500"></i>
+                            <span>April 28, 2023</span>
+                            <span class="mx-2">•</span>
+                            <span class="text-amber-500">Article</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Developing a Consistent Prayer Life</h3>
+                        <p class="text-gray-600 mb-4">Practical steps to cultivate a deeper prayer life that transforms
+                            your relationship with God and impacts those around you...</p>
+                        <div class="flex justify-between items-center">
+                            <a href="#"
+                                class="text-amber-500 font-medium hover:text-amber-600 transition duration-300">Read
+                                More <i class="fas fa-arrow-right ml-1"></i></a>
+                            <span class="text-sm text-gray-500"><i class="fas fa-clock mr-1"></i> 6 min read</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="blog-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300"
+                    data-category="article">
+                    <img src="https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                        alt="Theology" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center text-sm text-gray-500 mb-2">
+                            <i class="fas fa-user mr-2 text-amber-500"></i>
+                            <span>Dr. Robert Chen</span>
+                            <span class="mx-2">•</span>
+                            <i class="fas fa-calendar mr-2 text-amber-500"></i>
+                            <span>April 15, 2023</span>
+                            <span class="mx-2">•</span>
+                            <span class="text-amber-500">Article</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Why Theology Matters for Every Believer</h3>
+                        <p class="text-gray-600 mb-4">Theology isn't just for scholars—it's the foundation of our faith
+                            that shapes how we live, worship, and share the Gospel...</p>
+                        <div class="flex justify-between items-center">
+                            <a href="#"
+                                class="text-amber-500 font-medium hover:text-amber-600 transition duration-300">Read
+                                More <i class="fas fa-arrow-right ml-1"></i></a>
+                            <span class="text-sm text-gray-500"><i class="fas fa-clock mr-1"></i> 10 min read</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Travel Blogs -->
+                <div class="blog-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300"
+                    data-category="travel">
+                    <img src="https://images.unsplash.com/photo-1531545514256-b1400bc00f36?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80"
+                        alt="Holy Land" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center text-sm text-gray-500 mb-2">
+                            <i class="fas fa-user mr-2 text-amber-500"></i>
+                            <span>Dr. Elizabeth Thompson</span>
+                            <span class="mx-2">•</span>
+                            <i class="fas fa-calendar mr-2 text-amber-500"></i>
+                            <span>March 30, 2023</span>
+                            <span class="mx-2">•</span>
+                            <span class="text-amber-500">Travel</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Walking Where Jesus Walked: A Holy Land Journey
+                        </h3>
+                        <p class="text-gray-600 mb-4">My personal reflections on visiting biblical sites in Israel and
+                            how it transformed my understanding of Scripture...</p>
+                        <div class="flex justify-between items-center">
+                            <a href="#"
+                                class="text-amber-500 font-medium hover:text-amber-600 transition duration-300">Read
+                                More <i class="fas fa-arrow-right ml-1"></i></a>
+                            <span class="text-sm text-gray-500"><i class="fas fa-clock mr-1"></i> 12 min read</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="blog-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300"
+                    data-category="article">
+                    <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                        alt="Bible Study" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center text-sm text-gray-500 mb-2">
+                            <i class="fas fa-user mr-2 text-amber-500"></i>
+                            <span>Rev. Mark Davis</span>
+                            <span class="mx-2">•</span>
+                            <i class="fas fa-calendar mr-2 text-amber-500"></i>
+                            <span>March 15, 2023</span>
+                            <span class="mx-2">•</span>
+                            <span class="text-amber-500">Article</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Understanding Biblical Prophecy</h3>
+                        <p class="text-gray-600 mb-4">A guide to interpreting prophetic literature in Scripture with
+                            wisdom and discernment...</p>
+                        <div class="flex justify-between items-center">
+                            <a href="#"
+                                class="text-amber-500 font-medium hover:text-amber-600 transition duration-300">Read
+                                More <i class="fas fa-arrow-right ml-1"></i></a>
+                            <span class="text-sm text-gray-500"><i class="fas fa-clock mr-1"></i> 9 min read</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="blog-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300"
+                    data-category="travel">
+                    <img src="https://images.unsplash.com/photo-1562774053-701939374585?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1364&q=80"
+                        alt="Turkey" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center text-sm text-gray-500 mb-2">
+                            <i class="fas fa-user mr-2 text-amber-500"></i>
+                            <span>Dr. Anna Rodriguez</span>
+                            <span class="mx-2">•</span>
+                            <i class="fas fa-calendar mr-2 text-amber-500"></i>
+                            <span>February 28, 2023</span>
+                            <span class="mx-2">•</span>
+                            <span class="text-amber-500">Travel</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Following Paul's Footsteps in Turkey</h3>
+                        <p class="text-gray-600 mb-4">Exploring the seven churches of Revelation and other significant
+                            early Christian sites in modern-day Turkey...</p>
+                        <div class="flex justify-between items-center">
+                            <a href="#"
+                                class="text-amber-500 font-medium hover:text-amber-600 transition duration-300">Read
+                                More <i class="fas fa-arrow-right ml-1"></i></a>
+                            <span class="text-sm text-gray-500"><i class="fas fa-clock mr-1"></i> 15 min read</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-12">
+                <nav class="inline-flex rounded-md shadow">
+                    <a href="#"
+                        class="px-3 py-2 rounded-l-md border border-gray-300 bg-white text-gray-500 hover:bg-gray-50">
+                        <i class="fas fa-chevron-left"></i>
+                    </a>
+                    <a href="#"
+                        class="px-4 py-2 border-t border-b border-gray-300 bg-white text-amber-600 font-medium">1</a>
+                    <a href="#"
+                        class="px-4 py-2 border-t border-b border-gray-300 bg-white text-gray-500 hover:bg-gray-50">2</a>
+                    <a href="#"
+                        class="px-4 py-2 border-t border-b border-gray-300 bg-white text-gray-500 hover:bg-gray-50">3</a>
+                    <a href="#"
+                        class="px-4 py-2 border border-gray-300 bg-white text-gray-500 hover:bg-gray-50 rounded-r-md">
+                        <i class="fas fa-chevron-right"></i>
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-bible text-3xl text-amber-500 mr-2"></i>
+                        <span class="text-xl font-bold">Center for Biblical Studies</span>
+                    </div>
+                    <p class="text-gray-400">Equipping believers with biblical knowledge for faithful living and
+                        effective ministry.</p>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-400 hover:text-amber-500 transition duration-300">Home</a>
+                        </li>
+                        <li><a href="#blogs"
+                                class="text-gray-400 hover:text-amber-500 transition duration-300">Blogs</a></li>
+                        <li><a href="#contact"
+                                class="text-gray-400 hover:text-amber-500 transition duration-300">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Blog Categories</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-amber-500 transition duration-300">Biblical
+                                Studies</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-amber-500 transition duration-300">Theology</a>
+                        </li>
+                        <li><a href="#" class="text-gray-400 hover:text-amber-500 transition duration-300">Christian
+                                Living</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-amber-500 transition duration-300">Church
+                                History</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Newsletter</h3>
+                    <p class="text-gray-400 mb-4">Subscribe to receive new blog posts and updates directly to your
+                        inbox.</p>
+                    <form class="flex">
+                        <input type="email" placeholder="Your email"
+                            class="px-4 py-2 w-full rounded-l-md focus:outline-none text-gray-800">
+                        <button type="submit"
+                            class="bg-amber-500 hover:bg-amber-600 text-white px-4 py-2 rounded-r-md transition duration-300">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-700 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 text-sm">© 2023 Center for Biblical Studies. All rights reserved.</p>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <a href="#" class="text-gray-400 hover:text-amber-500 transition duration-300">Privacy Policy</a>
+                    <a href="#" class="text-gray-400 hover:text-amber-500 transition duration-300">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.querySelector('.mobile-menu-button');
+        const mobileMenu = document.querySelector('.mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+
+                // Close mobile menu if open
+                if (!mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        });
+
+        // Blog filtering functionality
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const blogCards = document.querySelectorAll('.blog-card');
+
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Remove active class from all buttons
+                filterButtons.forEach(btn => btn.classList.remove('active', 'bg-amber-500', 'text-white'));
+
+                // Add active class to clicked button
+                button.classList.add('active', 'bg-amber-500', 'text-white');
+                button.classList.remove('text-amber-500');
+
+                const filter = button.dataset.filter;
+
+                // Filter blog cards
+                blogCards.forEach(card => {
+                    if (filter === 'all' || card.dataset.category === filter) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

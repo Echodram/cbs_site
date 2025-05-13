@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Center for Biblical Studies - Deepening Faith Through Education</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="font-sans bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center">
+                    <i class="fas fa-bible text-3xl text-amber-500 mr-2"></i>
+                    <span class="text-xl font-bold text-gray-800">Center for Biblical Studies</span>
+                </div>
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="home.html"
+                        class="nav-link text-gray-800 hover:text-amber-500 px-3 py-2 rounded-md text-sm font-medium transition duration-300">Home</a>
+                    <a href="blogs.html"
+                        class="nav-link text-gray-800 hover:text-amber-500 px-3 py-2 rounded-md text-sm font-medium transition duration-300">Blogs</a>
+                    <a href="values.html"
+                        class="nav-link text-gray-800 hover:text-amber-500 px-3 py-2 rounded-md text-sm font-medium transition duration-300">Our
+                        Values</a>
+
+                    <div class="language-selector ml-4">
+                        <button class="flex items-center text-gray-800 hover:text-amber-500">
+                            <i class="fas fa-globe mr-1"></i>
+                            <span>English</span>
+                            <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                        </button>
+                        <div class="language-dropdown">
+                            <a href="#" class="flex items-center">
+                                <span class="mr-2">🇬🇧</span> English
+                            </a>
+                            <a href="#" class="flex items-center">
+                                <span class="mr-2">🇫🇷</span> Français
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button class="mobile-menu-button p-2 focus:outline-none">
+                        <i class="fas fa-bars text-gray-800 text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="mobile-menu hidden md:hidden bg-white">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="home.html"
+                    class="block px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:text-amber-500">Home</a>
+                <a href="blogs.html"
+                    class="block px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:text-amber-500">Blogs</a>
+                <a href="values.html"
+                    class="block px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:text-amber-500">Our
+                    Values</a>
+                <div class="pt-2 border-t border-gray-200">
+                    <div class="flex items-center px-3 py-2">
+                        <i class="fas fa-globe mr-2 text-gray-800"></i>
+                        <span class="text-gray-800 mr-2">Language:</span>
+                        <select class="border border-gray-300 rounded px-2 py-1 text-sm">
+                            <option>English</option>
+                            <option>Français</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="index-hero flex items-center justify-center text-center text-white relative">
+        <div class="px-4 max-w-4xl mx-auto">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6 animate-fade-in">Deepen Your Faith Through Biblical Education
+            </h1>
+            <p class="text-xl md:text-2xl mb-8">Join our community of believers committed to studying God's Word and
+                growing in spiritual maturity.</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#values"
+                    class="btn-primary bg-amber-500 hover:bg-amber-600 text-white font-bold py-3 px-6 rounded-full text-lg transition duration-300">
+                    <i class="fas fa-info-circle mr-2"></i> Learn About Us
+                </a>
+                <a href="#contact-form"
+                    class="btn-primary bg-transparent hover:bg-white hover:text-gray-900 border-2 border-white text-white font-bold py-3 px-6 rounded-full text-lg transition duration-300">
+                    <i class="fas fa-envelope mr-2"></i> Contact Us
+                </a>
+            </div>
+        </div>
+        <div class="absolute bottom-10 left-0 right-0 text-center">
+            <a href="#values" class="text-white animate-bounce">
+                <i class="fas fa-chevron-down text-3xl"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Our Values Section -->
+    <section id="values" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Our Core Values</h2>
+                <div class="w-20 h-1 bg-amber-500 mx-auto"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto mt-4">These foundational principles guide everything we do at
+                    the Center for Biblical Studies</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Training Card -->
+                <div class="value-card bg-gray-50 rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-4 text-center">Biblical Training</h3>
+                        <img src="https://images.unsplash.com/photo-1454165804606-3c3b2d5d9845?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                            alt="Biblical Training" class="w-full h-48 object-cover rounded-md mb-4">
+                        <p class="text-gray-600">We provide comprehensive biblical education that equips students with
+                            knowledge and skills for faithful interpretation and application of Scripture in ministry
+                            contexts.</p>
+                    </div>
+                </div>
+
+                <!-- Library Card -->
+                <div class="value-card bg-gray-50 rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-4 text-center">Research Library</h3>
+                        <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                            alt="Research Library" class="w-full h-48 object-cover rounded-md mb-4">
+                        <p class="text-gray-600">Our extensive theological library offers access to thousands of
+                            resources, supporting in-depth study and research for students and scholars alike.</p>
+                    </div>
+                </div>
+
+                <!-- Christian Growth Card -->
+                <div class="value-card bg-gray-50 rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-4 text-center">Christian Growth</h3>
+                        <img src="https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                            alt="Christian Growth" class="w-full h-48 object-cover rounded-md mb-4">
+                        <p class="text-gray-600">We emphasize spiritual formation, helping students develop Christ-like
+                            character through discipleship, worship, and practical ministry experiences.</p>
+                    </div>
+                </div>
+
+                <!-- Church History Card -->
+                <div class="value-card bg-gray-50 rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-4 text-center">Church History</h3>
+                        <img src="https://images.unsplash.com/photo-1531545514256-b1400bc00f36?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80"
+                            alt="Church History" class="w-full h-48 object-cover rounded-md mb-4">
+                        <p class="text-gray-600">We preserve and teach the rich heritage of Christian thought and
+                            practice, connecting students to the historical roots of their faith.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Training Section -->
+    <section id="training" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Our Training</h2>
+                <div class="w-20 h-1 bg-amber-500 mx-auto"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto mt-4">Discover our comprehensive training programs designed to
+                    equip you for effective ministry</p>
+            </div>
+
+            <!-- Campuses Row -->
+            <div class="flex flex-col md:flex-row items-center gap-8 mb-16">
+                <div class="w-full md:w-1/2">
+                    <img src="https://images.unsplash.com/photo-1562774053-701939374585?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1364&q=80"
+                        alt="Our Campus" class="w-full h-auto rounded-lg shadow-lg">
+                </div>
+                <div class="w-full md:w-1/2">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Our Campuses</h3>
+                    <p class="text-gray-600 mb-4">
+                        Our state-of-the-art campuses provide the perfect environment for spiritual growth and academic
+                        excellence.
+                        With modern facilities, prayer gardens, and dedicated study spaces, we've created spaces that
+                        foster both
+                        community and individual reflection.
+                    </p>
+                    <p class="text-gray-600">
+                        We have three main campuses across the country, each offering unique opportunities for ministry
+                        training
+                        and cultural engagement. Our locations are strategically chosen to serve diverse communities
+                        while maintaining
+                        our commitment to biblical fidelity.
+                    </p>
+                    <a href="#"
+                        class="inline-block mt-4 text-amber-500 font-medium hover:text-amber-600 transition duration-300">
+                        Explore our campuses <i class="fas fa-arrow-right ml-1"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Modules Row -->
+            <div class="flex flex-col md:flex-row items-center gap-8 mb-16">
+                <div class="w-full md:w-1/2 order-2 md:order-1">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Our Modules</h3>
+                    <p class="text-gray-600 mb-4">
+                        Our curriculum is carefully designed to provide a balanced approach to theological education,
+                        combining
+                        rigorous academic study with practical ministry application. Each module builds on biblical
+                        foundations
+                        while addressing contemporary challenges.
+                    </p>
+                    <ul class="text-gray-600 list-disc pl-5 space-y-2">
+                        <li>Biblical Languages and Exegesis</li>
+                        <li>Systematic Theology and Doctrine</li>
+                        <li>Church History and Historical Theology</li>
+                        <li>Practical Ministry and Leadership</li>
+                        <li>Apologetics and Cultural Engagement</li>
+                    </ul>
+                    <a href="#"
+                        class="inline-block mt-4 text-amber-500 font-medium hover:text-amber-600 transition duration-300">
+                        View all modules <i class="fas fa-arrow-right ml-1"></i>
+                    </a>
+                </div>
+                <div class="w-full md:w-1/2 order-1 md:order-2">
+                    <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                        alt="Our Modules" class="w-full h-auto rounded-lg shadow-lg">
+                </div>
+            </div>
+
+            <!-- Teachers Row -->
+            <div class="text-center mb-8">
+                <h3 class="text-2xl font-bold text-gray-800 mb-4">Meet Our Faculty</h3>
+                <p class="text-gray-600 max-w-2xl mx-auto">
+                    Our distinguished faculty bring decades of combined experience in ministry, scholarship, and
+                    teaching.
+                    They are committed to mentoring the next generation of Christian leaders.
+                </p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Teacher 1 -->
+                <div class="teacher-card bg-white p-6 rounded-lg shadow-md transition duration-300">
+                    <div class="flex justify-center mb-4">
+                        <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
+                            alt="Dr. Sarah Johnson"
+                            class="w-32 h-32 rounded-full object-cover border-4 border-amber-500">
+                    </div>
+                    <h4 class="text-xl font-bold text-gray-800 text-center mb-2">Dr. Sarah Johnson</h4>
+                    <p class="text-amber-500 text-center mb-4">Professor of New Testament Studies</p>
+                    <p class="text-gray-600 text-center">
+                        With over 20 years of teaching experience and numerous published works, Dr. Johnson specializes
+                        in Pauline
+                        theology and early Christian communities. She brings passion to every classroom discussion.
+                    </p>
+                </div>
+
+                <!-- Teacher 2 -->
+                <div class="teacher-card bg-white p-6 rounded-lg shadow-md transition duration-300">
+                    <div class="flex justify-center mb-4">
+                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
+                            alt="Dr. Michael Chen"
+                            class="w-32 h-32 rounded-full object-cover border-4 border-amber-500">
+                    </div>
+                    <h4 class="text-xl font-bold text-gray-800 text-center mb-2">Dr. Michael Chen</h4>
+                    <p class="text-amber-500 text-center mb-4">Professor of Systematic Theology</p>
+                    <p class="text-gray-600 text-center">
+                        A former pastor and now our resident theologian, Dr. Chen makes complex doctrines accessible and
+                        applicable.
+                        His courses on Christology and the Trinity are student favorites.
+                    </p>
+                </div>
+
+                <!-- Teacher 3 -->
+                <div class="teacher-card bg-white p-6 rounded-lg shadow-md transition duration-300">
+                    <div class="flex justify-center mb-4">
+                        <img src="https://images.unsplash.com/photo-1544717305-2782549b5136?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
+                            alt="Dr. Robert Williams"
+                            class="w-32 h-32 rounded-full object-cover border-4 border-amber-500">
+                    </div>
+                    <h4 class="text-xl font-bold text-gray-800 text-center mb-2">Dr. Robert Williams</h4>
+                    <p class="text-amber-500 text-center mb-4">Professor of Old Testament Studies</p>
+                    <p class="text-gray-600 text-center">
+                        With expertise in Hebrew and Ancient Near Eastern studies, Dr. Williams illuminates the Old
+                        Testament
+                        with historical and linguistic insights that bring the text to life.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section id="events" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Upcoming Events</h2>
+                <div class="w-20 h-1 bg-amber-500 mx-auto"></div>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="event-card bg-white rounded-lg shadow-md overflow-hidden transition duration-500">
+                    <img src="https://images.unsplash.com/photo-1531545514256-b1400bc00f36?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80"
+                        alt="Bible Conference" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center text-sm text-gray-500 mb-2">
+                            <i class="fas fa-calendar-day mr-2 text-amber-500"></i>
+                            <span>June 15-17, 2023</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Annual Bible Conference</h3>
+                        <p class="text-gray-600 mb-4">Join us for three days of powerful teaching, worship, and
+                            fellowship as we explore the theme "Rooted in Christ."</p>
+                        <a href="#"
+                            class="text-amber-500 font-medium hover:text-amber-600 transition duration-300">Learn More
+                            <i class="fas fa-arrow-right ml-1"></i></a>
+                    </div>
+                </div>
+
+                <div class="event-card bg-white rounded-lg shadow-md overflow-hidden transition duration-500">
+                    <img src="https://images.unsplash.com/photo-1452421822248-d4c2b47f0c81?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1474&q=80"
+                        alt="Leadership Workshop" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center text-sm text-gray-500 mb-2">
+                            <i class="fas fa-calendar-day mr-2 text-amber-500"></i>
+                            <span>July 8, 2023</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Biblical Leadership Workshop</h3>
+                        <p class="text-gray-600 mb-4">A one-day intensive training on servant leadership principles from
+                            Scripture for church and ministry leaders.</p>
+                        <a href="#"
+                            class="text-amber-500 font-medium hover:text-amber-600 transition duration-300">Learn More
+                            <i class="fas fa-arrow-right ml-1"></i></a>
+                    </div>
+                </div>
+
+                <div class="event-card bg-white rounded-lg shadow-md overflow-hidden transition duration-500">
+                    <img src="https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                        alt="New Students" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center text-sm text-gray-500 mb-2">
+                            <i class="fas fa-calendar-day mr-2 text-amber-500"></i>
+                            <span>August 21, 2023</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Fall Semester Orientation</h3>
+                        <p class="text-gray-600 mb-4">Welcome event for new students starting our Fall semester
+                            programs. Meet faculty, staff, and fellow students.</p>
+                        <a href="#"
+                            class="text-amber-500 font-medium hover:text-amber-600 transition duration-300">Learn More
+                            <i class="fas fa-arrow-right ml-1"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-12">
+                <a href="#"
+                    class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-amber-500 hover:bg-amber-600 transition duration-300">
+                    View All Events <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blogs Section -->
+    <section id="blogs" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">From Our Blog</h2>
+                <div class="w-20 h-1 bg-amber-500 mx-auto"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto mt-4">Insights, devotionals, and biblical teaching from our
+                    faculty and guest contributors.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="blog-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300">
+                    <img src="https://images.unsplash.com/photo-1454165804606-3c3b2d5d9845?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                        alt="Bible Study" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center text-sm text-gray-500 mb-2">
+                            <i class="fas fa-user mr-2 text-amber-500"></i>
+                            <span>Dr. Michael Johnson</span>
+                            <span class="mx-2">•</span>
+                            <i class="fas fa-calendar mr-2 text-amber-500"></i>
+                            <span>May 12, 2023</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">The Power of Context in Biblical Interpretation
+                        </h3>
+                        <p class="text-gray-600 mb-4">Understanding the historical and literary context of Scripture is
+                            essential for accurate interpretation and application...</p>
+                        <a href="#" class="text-amber-500 font-medium hover:text-amber-600 transition duration-300">Read
+                            More <i class="fas fa-arrow-right ml-1"></i></a>
+                    </div>
+                </div>
+
+                <div class="blog-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300">
+                    <img src="https://images.unsplash.com/photo-1503945438517-f65904c7f1b9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                        alt="Prayer" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center text-sm text-gray-500 mb-2">
+                            <i class="fas fa-user mr-2 text-amber-500"></i>
+                            <span>Pastor Sarah Williams</span>
+                            <span class="mx-2">•</span>
+                            <i class="fas fa-calendar mr-2 text-amber-500"></i>
+                            <span>April 28, 2023</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Developing a Consistent Prayer Life</h3>
+                        <p class="text-gray-600 mb-4">Practical steps to cultivate a deeper prayer life that transforms
+                            your relationship with God and impacts those around you...</p>
+                        <a href="#" class="text-amber-500 font-medium hover:text-amber-600 transition duration-300">Read
+                            More <i class="fas fa-arrow-right ml-1"></i></a>
+                    </div>
+                </div>
+
+                <div class="blog-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300">
+                    <img src="https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                        alt="Theology" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center text-sm text-gray-500 mb-2">
+                            <i class="fas fa-user mr-2 text-amber-500"></i>
+                            <span>Dr. Robert Chen</span>
+                            <span class="mx-2">•</span>
+                            <i class="fas fa-calendar mr-2 text-amber-500"></i>
+                            <span>April 15, 2023</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Why Theology Matters for Every Believer</h3>
+                        <p class="text-gray-600 mb-4">Theology isn't just for scholars—it's the foundation of our faith
+                            that shapes how we live, worship, and share the Gospel...</p>
+                        <a href="#" class="text-amber-500 font-medium hover:text-amber-600 transition duration-300">Read
+                            More <i class="fas fa-arrow-right ml-1"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-12">
+                <a href="#"
+                    class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-amber-500 hover:bg-amber-600 transition duration-300">
+                    View All Articles <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-bible text-3xl text-amber-500 mr-2"></i>
+                        <span class="text-xl font-bold">Center for Biblical Studies</span>
+                    </div>
+                    <p class="text-gray-400">Equipping believers with biblical knowledge for faithful living and
+                        effective ministry.</p>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-400 hover:text-amber-500 transition duration-300">Home</a>
+                        </li>
+                        <li><a href="#events"
+                                class="text-gray-400 hover:text-amber-500 transition duration-300">Events</a></li>
+                        <li><a href="#blogs"
+                                class="text-gray-400 hover:text-amber-500 transition duration-300">Blogs</a></li>
+                        <li><a href="#values" class="text-gray-400 hover:text-amber-500 transition duration-300">Our
+                                Values</a></li>
+                        <li><a href="#contact"
+                                class="text-gray-400 hover:text-amber-500 transition duration-300">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Programs</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-amber-500 transition duration-300">Certificate
+                                Programs</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-amber-500 transition duration-300">Diploma in
+                                Theology</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-amber-500 transition duration-300">Biblical
+                                Studies</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-amber-500 transition duration-300">Leadership
+                                Training</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-amber-500 transition duration-300">Online
+                                Courses</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Newsletter</h3>
+                    <p class="text-gray-400 mb-4">Subscribe to receive updates, devotionals, and event information.</p>
+                    <form class="flex">
+                        <input type="email" placeholder="Your email"
+                            class="px-4 py-2 w-full rounded-l-md focus:outline-none text-gray-800">
+                        <button type="submit"
+                            class="bg-amber-500 hover:bg-amber-600 text-white px-4 py-2 rounded-r-md transition duration-300">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-700 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 text-sm">© 2023 Center for Biblical Studies. All rights reserved.</p>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <a href="#" class="text-gray-400 hover:text-amber-500 transition duration-300">Privacy Policy</a>
+                    <a href="#" class="text-gray-400 hover:text-amber-500 transition duration-300">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.querySelector('.mobile-menu-button');
+        const mobileMenu = document.querySelector('.mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+
+                // Close mobile menu if open
+                if (!mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        });
+
+        // Form submission (example)
+        const contactForm = document.querySelector('#contact-form form');
+        if (contactForm) {
+            contactForm.addEventListener('submit', function (e) {
+                e.preventDefault();
+                alert('Thank you for your message! We will get back to you soon.');
+                this.reset();
+            });
+        }
+    </script>
+</body>
+
+</html>
