@@ -74,176 +74,88 @@
         </div>
     </nav>
 
-    <!-- About Hero Section -->
-    <section id="about-hero" class="about-hero flex items-center justify-center text-center text-white relative">
-        <div class="px-4 max-w-4xl mx-auto">
-            <h1 class="text-4xl md:text-6xl font-bold mb-6 animate-fade-in">À Propos de Notre Ministère</h1>
-            <p class="text-xl md:text-2xl mb-8">Découvrez notre mission, nos valeurs et l'équipe dédiée à la bourse biblique et à l'éducation chrétienne</p>
-            <div class="flex flex-col sm:flex-row justify-center gap-4">
-                <a href="#team"
-                    class="btn-primary bg-transparent hover:bg-white hover:text-gray-900 border-2 border-white text-white font-bold py-3 px-6 rounded-full text-lg transition duration-300">
-                    <i class="fas fa-users mr-2"></i> Rencontrez l'Équipe
+
+
+    <!-- About Content Section -->
+    <section id="about-content" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4" id="event-title"><script>
+                    fetch('json/event.json')
+                                .then(response => response.json())
+                                .then(data => {
+                                 // Récupérer l'ID à partir des paramètres d'URL
+                                const params = new URLSearchParams(window.location.search);
+                                const id = params.get('id');
+
+                                // Afficher les informations
+                                if (id !== null && id < data.length) {
+                                    console.log('Chargement des données pour l\'ID:', id);
+                                    const item = data[id];
+                                    document.getElementById('event-title').innerHTML = `${item.evenement}`;
+                                } else {
+                                    document.getElementById('event-title').innerHTML = `<p>Aucune information disponible.</p>`;
+                                }
+                            })
+                            .catch(error => console.error('Erreur de chargement:', error));
+                </script></h2>
+                <div class="w-20 h-1 bg-amber-500 mx-auto"></div>
+                <p class="text-gray-600 max-w-4xl mx-auto mt-6 text-lg" id="event-description">
+                    <script>
+                        fetch('json/event.json')
+                                .then(response => response.json())
+                                .then(data => {
+                                 // Récupérer l'ID à partir des paramètres d'URL
+                                const params = new URLSearchParams(window.location.search);
+                                const id = params.get('id');
+
+                                // Afficher les informations
+                                if (id !== null && id < data.length) {
+                                    console.log('Chargement des données pour l\'ID:', id);
+                                    const item = data[id];
+                                    document.getElementById('event-description').innerHTML = `${item.content}`;
+                                } else {
+                                    document.getElementById('event-description').innerHTML = `<p>Aucune information disponible.</p>`;
+                                }
+                            })
+                            .catch(error => console.error('Erreur de chargement:', error));
+                    </script>
+                </p>
+            </div>
+   
+
+            <div class="text-center mt-12">
+                <a href="#contact"
+                    class="btn-primary inline-block bg-amber-500 hover:bg-amber-600 text-white font-bold py-3 px-6 rounded-full text-lg transition duration-300">
+                    <i class="fas fa-paper-plane mr-2"></i> Contact Our Team
                 </a>
             </div>
         </div>
-        <div class="absolute bottom-10 left-0 right-0 text-center">
-            <a href="#about-content" class="text-white animate-bounce">
-                <i class="fas fa-chevron-down text-3xl"></i>
-            </a>
-        </div>
     </section>
 
-        
-    <!-- Mission Section -->
-    <section id="mission" class="py-20 bg-gray-50">
+    <!-- Stats Section -->
+    <section class="py-16 bg-amber-500 text-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Nos Valeurs</h2>
-                <div class="w-20 h-1 bg-amber-500 mx-auto"></div>
-                <p class="text-gray-600 max-w-2xl mx-auto mt-4">
-                    <h1>Au Centre d'Étude Biblique (CEB), notre formation repose sur des valeurs
-                    fondamentales qui forgent le caractère et équipent pour un service authentique. 
-                    Nous croyons que la croissance spirituelle et l'efficacité dans le ministère sont 
-                    ancrées dans ces principes inébranlables</h1>
-                </p>
-            </div>
-
-            <div class="grid md:grid-cols-4 gap-7">
-                <!-- Mission Card 1 -->
-                <div
-                    class="mission-card bg-white p-8 rounded-lg shadow-md text-center transition duration-300 hover:shadow-lg">
-                    <div class="mission-icon mb-4 text-4xl text-gray-700">
-                        <i class="fas fa-bible"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-800 mb-3">Discipline</h3>
-                    <p class="text-gray-600">
-                        Cultiver la rigueur intellectuelle et spirituelle, 
-                        essentielle à une étude approfondie de la Parole et à une vie chrétienne structurée.
-                    </p>
+            <div class="grid md:grid-cols-4 gap-8 text-center">
+                <div class="p-4">
+                    <div class="text-4xl font-bold mb-2">18</div>
+                    <div class="text-lg">Years Serving</div>
                 </div>
-
-                <!-- Mission Card 2 -->
-                <div
-                    class="mission-card bg-white p-8 rounded-lg shadow-md text-center transition duration-300 hover:shadow-lg">
-                    <div class="mission-icon mb-4 text-4xl text-gray-700">
-                        <i class="fas fa-graduation-cap"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-800 mb-3">Prière</h3>
-                    <p class="text-gray-600">
-                       Placer la communion avec Dieu au cœur de toute démarche, 
-                       reconnaissant qu'elle est la source de toute sagesse et de toute force.
-                    </p>
+                <div class="p-4">
+                    <div class="text-4xl font-bold mb-2">50K+</div>
+                    <div class="text-lg">Subscribers</div>
                 </div>
-
-                <!-- Mission Card 3 -->
-                <div
-                    class="mission-card bg-white p-8 rounded-lg shadow-md text-center transition duration-300 hover:shadow-lg">
-                    <div class="mission-icon mb-4 text-4xl text-gray-700">
-                        <i class="fas fa-hands-helping"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-800 mb-3">Fidélité</h3>
-                    <p class="text-gray-600">
-                       Demeurer constant dans l'engagement envers Dieu,
-                       sa Parole et l'appel reçu, quelles que soient les circonstances.
-                    </p>
+                <div class="p-4">
+                    <div class="text-4xl font-bold mb-2">120</div>
+                    <div class="text-lg">Countries Reached</div>
                 </div>
-                
-                <!-- Mission Card 4 -->
-                <div
-                class="mission-card bg-white p-8 rounded-lg shadow-md text-center transition duration-300 hover:shadow-lg">
-                    <div class="mission-icon mb-4 text-4xl text-gray-700">
-                        <i class="fas fa-hands-helping"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-800 mb-3">Excellence</h3>
-                    <p class="text-gray-600">
-                      Aspirer à l'excellence en toute chose, dans l'étude, le service et le témoignage, 
-                      pour glorifier pleinement le nom de Christ.
-
-                    </p>
-                </div>
-            </div>
-
-            </div>
-
-        
-          
-
-            <div class="mt-16 bg-amber-50 border-l-4 border-amber-500 p-6 rounded">
-                <div class="flex">
-                    <div class="flex-shrink-0">
-                        <i class="fas fa-quote-left text-3xl text-amber-500"></i>
-                    </div>
-                    <div class="ml-4">
-                        <p class="text-lg italic text-gray-700">
-                            "Notre vision est de voir chaque croyant équipé d'une compréhension 
-                            approfondie des Écritures, transformant ainsi sa relation avec Dieu et 
-                            ayant un impact sur ses communautés pour Christ."
-                        </p>
-                        <p class="mt-4 font-medium text-gray-800">
-                            — Dr. Michael Johnson, Founder & Director
-                        </p>
-                    </div>
+                <div class="p-4">
+                    <div class="text-4xl font-bold mb-2">12</div>
+                    <div class="text-lg">Scholars</div>
                 </div>
             </div>
         </div>
     </section>
-
-    <!-- Team Section -->
-                <h3 class="text-2xl font-bold text-gray-800 mb-4 text-center">Rencontrez notre équipe pédagogique</h3>
-                <p class="text-gray-600 max-w-2xl mx-auto text-center">
-                    Notre équipe pédagogique distinguée cumule des décennies d'expérience en ministère, recherche et enseignement.
-                    Elle s'engage à accompagner la prochaine génération de leaders chrétiens.
-                </p>
-            </div>
-            <div class="grid md:grid-cols-3 gap-8">
-                <!-- Teacher 1 -->
-                <div class="teacher-card bg-white p-6 rounded-lg shadow-md transition duration-300">
-                    <div class="flex justify-center mb-4">
-                        <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
-                            alt="Dr. Sarah Johnson"
-                            class="w-32 h-32 rounded-full object-cover border-4 border-amber-500">
-                    </div>
-                    <h4 class="text-xl font-bold text-gray-800 text-center mb-2">Pasteur Godwe Lourna</h4>
-                    <p class="text-amber-500 text-center mb-4">Pasteur de Maison Globale de Prière</p>
-                    <p class="text-gray-600 text-center">
-                        Godwe Lourna, ancien étudiant égaré, est devenu pasteur et enseignant passionné de théologie grâce à une rencontre avec Christ et une dévotion à l'étude.
-                        <br>
-    
-                    </p>
-                </div>
-
-                <!-- Teacher 2 -->
-                <div class="teacher-card bg-white p-6 rounded-lg shadow-md transition duration-300">
-                    <div class="flex justify-center mb-4">
-                        <img src="https://images.unsplash.com/photo-1544717305-2782549b5136?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
-                            alt="Dr. Robert Williams"
-                            class="w-32 h-32 rounded-full object-cover border-4 border-amber-500">
-                    </div>
-                    <h4 class="text-xl font-bold text-gray-800 text-center mb-2">Pasteur Theophile Bilog Gaspard</h4>
-                    <p class="text-amber-500 text-center mb-4">Professeur d'Ancien Testament</p>
-                    <p class="text-gray-600 text-center">
-                            Théophile Bilog, d'origine modeste, a vu sa vie changer en 1995 grâce à sa foi et à l'engagement de son épouse, le menant à diriger une école biblique.                        <br>
-                    </p>
-                </div>
-
-                <!-- Teacher 3 -->
-                <div class="teacher-card bg-white p-6 rounded-lg shadow-md transition duration-300">
-                    <div class="flex justify-center mb-4">
-                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
-                            alt="Dr. Michael Chen"
-                            class="w-32 h-32 rounded-full object-cover border-4 border-amber-500">
-                    </div>
-                    <h4 class="text-xl font-bold text-gray-800 text-center mb-2">Pasteur Donaldson Assontia</h4>
-                    <p class="text-amber-500 text-center mb-4">Pasteur de Maison Globale de Prière</p>
-                    <p class="text-gray-600 text-center">
-                            Le Pasteur Donaldson croit que la sincérité d'un cœur peut transformer et équiper pour le service, 
-                            avec une foi née dans son adolescence et un appel pastoral révélé par un rêve.                        <br>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
 
     <!-- Contact Section -->
     <section id="contact" class="py-20 bg-gray-50">
