@@ -7,10 +7,10 @@ function saveToLocalStorage(key, jsonData) {
     
 async function fetchData() {
     try {
-        const response1 = await fetch('http://mardoche.pythonanywhere.com/blogs/');
+        const response1 = await fetch('https://mardoche.pythonanywhere.com/blogs/');
         const data1 = await response1.json();
 
-        const response2 = await fetch('http://mardoche.pythonanywhere.com/event/');
+        const response2 = await fetch('https://mardoche.pythonanywhere.com/event/');
         const data2 = await response2.json();
        
         saveToLocalStorage('event', data2)
