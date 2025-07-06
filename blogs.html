@@ -10,13 +10,31 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 
+<template id = "blog-template">
+    <div class="blog-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300" >
+        <img alt="Étude biblique" class="w-full h-48 object-cover">
+        <div class="p-6">
+            <div class="flex items-center text-sm text-gray-500 mb-2">
+                <i class="fas fa-user mr-2 text-amber-500"></i>
+                <span id="blog-author"></span>
+                <span class="mx-2">•</span>
+                <i class="fas fa-calendar mr-2 text-amber-500"></i>
+                <span id="blog-date"></span>
+            </div>
+            <h3 class="text-xl font-bold text-gray-800 mb-2" id="blog-title" ></h3>
+            <p class="text-gray-600 mb-4" id="blog-content"></p>
+            <a href="blog_content.html?id=0" class="text-amber-500 font-medium hover:text-amber-600 transition duration-300">Lire la suite <i class="fas fa-arrow-right ml-1"></i></a>
+        </div>
+    </div>
+</template>
+
 <body class="font-sans bg-gray-50">
     <!-- Navigation -->
     <nav class="bg-white shadow-lg sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-4">
             <div class="flex justify-between items-center h-20">
                 <div class="flex items-center">
-                    <i class="text-3xl text-amber-500 mr-2"><img src="static/logo_cbs.png" width="100" height="100"></i>
+                    <i class="text-3xl text-amber-500 mr-2"><img src="static/img/logo_cbs.png" width="100" height="100"></i>
                     <span class="text-xl font-bold text-gray-800">Centre d'Études Bibliques</span>
                 </div>
                 <div class="hidden md:flex space-x-8 items-center">
@@ -94,7 +112,7 @@
 
     <!-- Blogs Section -->
     <section id="blogs" class="py-20 bg-gray-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" >
             <div class="text-center mb-16">
                 <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Depuis notre blog</h2>
                 <div class="w-20 h-1 bg-amber-500 mx-auto"></div>
@@ -120,59 +138,9 @@
                 </div>
             </div>
 
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="blog-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300">
-                    <div class="p-6">
-                        <div class="flex items-center text-sm text-gray-500 mb-2">
-                            <i class="fas fa-user mr-2 text-amber-500"></i>
-                            <span>Dr. Michael Johnson</span>
-                            <span class="mx-2">•</span>
-                            <i class="fas fa-calendar mr-2 text-amber-500"></i>
-                            <span>12 mai 2023</span>
-                        </div>
-                        <h3 class="text-xl font-bold text-gray-800 mb-2">Du scepticisme à la direction : L'itinéraire inattendu de Théophile Bilog</h3>
-                        <p class="text-gray-600 mb-4">Découvrez le parcours inspirant du Pasteur Donaldson, un homme dont la conviction profonde est que la volonté d'un cœur sincère suffit à
-                             Dieu pour initier une transformation et équiper pour son service. Une foi forgée dès l'adolescence et un appel pastoral confirmé par un rêve ont tracé sa voie.</p>
-                        <a href="blog_content.html?id=0" class="text-amber-500 font-medium hover:text-amber-600 transition duration-300">Lire la suite <i class="fas fa-arrow-right ml-1"></i></a>
-                    </div>
-                </div>
-
-                <div class="blog-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300">
-                    <div class="p-6">
-                        <div class="flex items-center text-sm text-gray-500 mb-2">
-                            <i class="fas fa-user mr-2 text-amber-500"></i>
-                            <span>Pasteur Sarah Williams</span>
-                            <span class="mx-2">•</span>
-                            <i class="fas fa-calendar mr-2 text-amber-500"></i>
-                            <span>28 avril 2023</span>
-                        </div>
-                        <h3 class="text-xl font-bold text-gray-800 mb-2">La volonté et le cœur disposé : les fondations clés de la vie chrétienne du Pasteur Donaldson Assontia</h3>
-                        <p class="text-gray-600 mb-4">Découvrez le parcours inspirant du Pasteur Donaldson, un homme dont la conviction profonde est que la volonté 
-                                                            d'un cœur sincère suffit à Dieu pour initier une transformation et équiper pour son service. 
-                                                            Une foi forgée dès l'adolescence et un appel pastoral confirmé par un rêve ont tracé sa voie.</p>
-                        <a href="blog_content.html?id=2" class="text-amber-500 font-medium hover:text-amber-600 transition duration-300">Lire la suite <i class="fas fa-arrow-right ml-1"></i></a>
-                    </div>
-                </div>
-
-                <div class="blog-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300">
-                    <div class="p-6">
-                        <div class="flex items-center text-sm text-gray-500 mb-2">
-                            <i class="fas fa-user mr-2 text-amber-500"></i>
-                            <span>Godwe Lourna</span>
-                            <span class="mx-2">•</span>
-                            <i class="fas fa-calendar mr-2 text-amber-500"></i>
-                            <span>15 avril 2023</span>
-                        </div>
-                        <h3 class="text-xl font-bold text-gray-800 mb-2">Le cheminement spirituel inattendu de Godwe Lourna</h3>
-                        <p class="text-gray-600 mb-4"> D'étudiant égaré par les plaisirs du monde à pasteur et enseignant passionné de théologie,
-                                                       découvrez le parcours inspirant de Godwe Lourna; un homme dont la vie a été profondément transformée 
-                                                       par une rencontre renouvelée avec Christ et une dévotion ardente à l'étude</p>
-
-                        <a href="blog_content.html?id=1" class="text-amber-500 font-medium hover:text-amber-600 transition duration-300">Lire la suite <i class="fas fa-arrow-right ml-1"></i></a>
-                    </div>
-                </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8" id="blog-container">
+               
             </div>
-              
 
         </div>
     </section>
@@ -183,7 +151,7 @@
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
                 <div>
                     <div class="flex items-center mb-4">
-                        <i class="fas fa-bible text-3xl text-amber-500 mr-2"></i>
+                        <i class="fas text-3xl text-amber-500 mr-2"><img src="static/img/logo_cbs.png" width="50" height="100"></i>
                         <span class="text-xl font-bold">Centre d'Études Bibliques</span>
                     </div>
                     <p class="text-gray-400">Equiper les croyants avec une connaissance biblique pour une vie fidèle et un ministère efficace.</p>
@@ -239,57 +207,7 @@
         </div>
     </footer>
 
-    <script>
-        // Mobile menu toggle
-        const mobileMenuButton = document.querySelector('.mobile-menu-button');
-        const mobileMenu = document.querySelector('.mobile-menu');
-
-        mobileMenuButton.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
-
-        // Smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-
-                // Close mobile menu if open
-                if (!mobileMenu.classList.contains('hidden')) {
-                    mobileMenu.classList.add('hidden');
-                }
-            });
-        });
-
-        // Blog filtering functionality
-        const filterButtons = document.querySelectorAll('.filter-btn');
-        const blogCards = document.querySelectorAll('.blog-card');
-
-        filterButtons.forEach(button => {
-            button.addEventListener('click', () => {
-                // Remove active class from all buttons
-                filterButtons.forEach(btn => btn.classList.remove('active', 'bg-amber-500', 'text-white'));
-
-                // Add active class to clicked button
-                button.classList.add('active', 'bg-amber-500', 'text-white');
-                button.classList.remove('text-amber-500');
-
-                const filter = button.dataset.filter;
-
-                // Filter blog cards
-                blogCards.forEach(card => {
-                    if (filter === 'all' || card.dataset.category === filter) {
-                        card.style.display = 'block';
-                    } else {
-                        card.style.display = 'none';
-                    }
-                });
-            });
-        });
-    </script>
+    <script src="static/js/script_blog.js"></script>
 </body>
 
 </html>
