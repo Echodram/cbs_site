@@ -10,8 +10,6 @@ import type { Metadata } from 'next'
 
 export const revalidate = 3600
 
-export const revalidate = 3600
-
 interface Props {
   params: { id: string }
 }
