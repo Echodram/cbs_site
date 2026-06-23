@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1, h2, h3 {
+    font-family: var(--font-playfair), Georgia, serif;
+  }
+
+  body {
+    font-family: var(--font-inter), system-ui, sans-serif;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* Prose styles for article content */
+.prose h1, .prose h2, .prose h3 {
+  font-family: var(--font-playfair), Georgia, serif;
+  color: #4A2C0A;
+}
+
+.prose blockquote {
+  border-left: 4px solid #F0C040;
+  background: #FAF5EE;
+  padding: 1rem 1.25rem;
+  border-radius: 0 0.5rem 0.5rem 0;
+}
+
+.prose a {
+  color: #4A2C0A;
+  text-decoration: underline;
+  text-decoration-color: #F0C040;
+}

@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(curl -s -H 'User-Agent: Mozilla/5.0 \\(Windows NT 10.0; Win64; x64\\) AppleWebKit/537.36 \\(KHTML, like Gecko\\) Chrome/120.0.0.0 Safari/537.36' 'https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap')",
+      "Read(//tmp/**)",
+      "Bash(sudo -u lenovo bash -c 'cd /home/lenovo/cbs_site/cbs_site && sudo chown -R lenovo:lenovo .next 2>/dev/null || true && echo \"predev OK\"')",
+      "Bash(chmod +x /home/lenovo/cbs_site/cbs_site/dev.sh)",
+      "Bash(sed -i \\\\ *)"
+    ],
+    "additionalDirectories": [
+      "/home/lenovo/cbs_site/cbs_site/app"
+    ]
+  }
+}
