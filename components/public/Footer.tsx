@@ -12,8 +12,8 @@ export function Footer() {
                 <BookOpen className="h-5 w-5 text-brand-brown" />
               </div>
               <div>
-                <p className="font-serif font-bold text-lg leading-tight">Center for Biblical</p>
-                <p className="text-brand-gold text-xs">Studies</p>
+                <p className="font-serif font-bold text-lg leading-tight">Center for Biblical Studies</p>
+               
               </div>
             </div>
             <p className="text-white/70 text-sm leading-relaxed">
@@ -29,7 +29,7 @@ export function Footer() {
                 { href: '/a-propos', label: 'À propos' },
                 { href: '/blog', label: 'Blog' },
                 { href: '/evenements', label: 'Événements' },
-                { href: '/contact', label: 'Contact' },
+                { href: '/contact', label: 'Contact' }
               ].map(link => (
                 <li key={link.href}>
                   <Link href={link.href} className="text-white/70 hover:text-brand-gold text-sm transition-colors">

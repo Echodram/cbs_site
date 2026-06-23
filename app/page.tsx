@@ -13,6 +13,8 @@ import { getUpcomingEvents } from '@/lib/supabase/events'
 import { getSiteSettings } from '@/lib/supabase/settings'
 import type { Metadata } from 'next'
 
+export const revalidate = 3600
+
 export const metadata: Metadata = {
   title: 'Accueil',
   description: 'Former des serviteurs de Dieu pour les nations — une mission ancrée dans la Parole.',

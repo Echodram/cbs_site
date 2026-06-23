@@ -5,6 +5,8 @@ import { Badge } from '@/components/ui/Badge'
 import { getPublishedArticles } from '@/lib/supabase/articles'
 import type { Metadata } from 'next'
 
+export const revalidate = 3600
+
 export const metadata: Metadata = {
   title: 'Blog',
   description: 'Articles, réflexions et enseignements du Center for Biblical Studies.',

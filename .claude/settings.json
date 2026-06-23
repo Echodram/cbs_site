@@ -4,7 +4,10 @@
       "Bash(git -C /home/lenovo/cbs_site/cbs_site log --oneline -5)",
       "Bash(git -C /home/lenovo/cbs_site/cbs_site add -A)",
       "Bash(git -C /home/lenovo/cbs_site/cbs_site commit -m ' *)",
-      "Bash(git -C /home/lenovo/cbs_site/cbs_site push)"
+      "Bash(git -C /home/lenovo/cbs_site/cbs_site push)",
+      "Bash(git -C /home/lenovo/cbs_site/cbs_site log --oneline origin/main -5)",
+      "Bash(git -C /home/lenovo/cbs_site/cbs_site remote -v)",
+      "Bash(gh auth *)"
     ]
   }
 }

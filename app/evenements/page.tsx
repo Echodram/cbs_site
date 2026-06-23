@@ -4,6 +4,8 @@ import { EventCard } from '@/components/public/EventCard'
 import { getAllEvents } from '@/lib/supabase/events'
 import type { Metadata } from 'next'
 
+export const revalidate = 3600
+
 export const metadata: Metadata = {
   title: 'Événements',
   description: 'Découvrez les événements et activités du Center for Biblical Studies.',
