@@ -22,7 +22,7 @@ export function Header() {
         {/* Logo */}
         <Link href="/" className="flex items-center gap-3 flex-shrink-0">
           <Image
-            src="/img/logo_cbs.png"
+            src="/images/logo_cbs.png"
             alt="Centre d'Études Bibliques"
             width={56}
             height={56}

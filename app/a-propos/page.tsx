@@ -80,7 +80,7 @@ export default async function AProposPage() {
             </div>
             <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
               <div className="relative h-72 rounded-xl overflow-hidden shadow-lg">
-                <Image src="/img/student.jpg" alt="Nos campus" fill className="object-cover" />
+                <Image src="/images/student.jpg" alt="Nos campus" fill className="object-cover" />
               </div>
               <div>
                 <h3 className="font-serif text-2xl font-bold text-brand-brown mb-4">Nos Campus</h3>
@@ -136,19 +136,19 @@ export default async function AProposPage() {
                   name: 'Pasteur Godwe Lourna',
                   role: 'Pasteur de Maison Globale de Prière',
                   bio: "Godwe Lourna, ancien étudiant égaré, est devenu pasteur et enseignant passionné de théologie grâce à une rencontre avec Christ et une dévotion à l'étude.",
-                  image: '/img/prof1.png',
+                  image: '/images/prof1.png',
                 },
                 {
                   name: 'Pasteur Theophile Bilog Gaspard',
                   role: "Professeur d'Ancien Testament",
                   bio: "Théophile Bilog, d'origine modeste, a vu sa vie changer en 1995 grâce à sa foi et à l'engagement de son épouse, le menant à diriger une école biblique.",
-                  image: '/img/prof2.png',
+                  image: '/images/prof2.png',
                 },
                 {
                   name: 'Pasteur Donaldson Assontia',
                   role: 'Pasteur de Maison Globale de Prière',
                   bio: "Le Pasteur Donaldson croit que la sincérité d'un cœur peut transformer et équiper pour le service, avec une foi née dans son adolescence.",
-                  image: '/img/prof3.png',
+                  image: '/images/prof3.png',
                 },
               ].map(teacher => (
                 <div key={teacher.name} className="bg-brand-cream rounded-xl shadow-md p-6 text-center">

@@ -14,19 +14,19 @@ const teachers = [
     name: "Pasteur Godwe Lourna",
     role: "Pasteur de Maison Globale de Prière",
     bio: "Godwe Lourna, ancien étudiant égaré, est devenu pasteur et enseignant passionné de théologie grâce à une rencontre avec Christ et une dévotion à l'étude de la Parole.",
-    image: "/img/prof1.png",
+    image: "/images/prof1.png",
   },
   {
     name: "Pasteur Theophile Bilog Gaspard",
     role: "Professeur d'Ancien Testament",
     bio: "Théophile Bilog, d'origine modeste, a vu sa vie changer en 1995 grâce à sa foi et à l'engagement de son épouse, le menant à diriger une école biblique.",
-    image: "/img/prof2.png",
+    image: "/images/prof2.png",
   },
   {
     name: "Pasteur Donaldson Assontia",
     role: "Pasteur de Maison Globale de Prière",
     bio: "Le Pasteur Donaldson croit que la sincérité d'un cœur peut transformer et équiper pour le service, avec une foi née dans son adolescence et un appel pastoral révélé par un rêve.",
-    image: "/img/prof3.png",
+    image: "/images/prof3.png",
   },
 ]
 
@@ -52,7 +52,7 @@ export function FormationSection() {
 
             <div className="rounded-2xl overflow-hidden shadow-md aspect-[3/2] relative">
               <Image
-                src="/img/student.jpg"
+                src="/images/student.jpg"
                 alt="Campus du Center for Biblical Studies"
                 fill
                 className="object-cover"
@@ -109,7 +109,7 @@ export function FormationSection() {
 
             <div className="order-1 md:order-2 rounded-2xl overflow-hidden shadow-md aspect-[4/3] relative">
               <Image
-                src="/img/sortie.jpeg"
+                src="/images/sortie.jpeg"
                 alt="Salle d'étude"
                 fill
                 className="object-cover"

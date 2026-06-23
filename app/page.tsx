@@ -49,10 +49,10 @@ const piliers = [
 ]
 
 const valeurs = [
-  { title: 'Discipline', src: '/img/discipline.jpeg', desc: "Cultiver la rigueur intellectuelle et spirituelle, essentielle à une étude approfondie de la Parole et à une vie chrétienne structurée." },
-  { title: 'Prière',     src: '/img/cheminement.jpeg', desc: "Placer la communion avec Dieu au cœur de toute démarche, reconnaissant qu'elle est la source de toute sagesse et de toute force." },
-  { title: 'Fidélité',   src: '/img/croissance.jpeg', desc: "Demeurer constant dans l'engagement envers Dieu, sa Parole et l'appel reçu, quelles que soient les circonstances." },
-  { title: 'Excellence', src: '/img/excellence.jpeg', desc: "Aspirer à l'excellence en toute chose, dans l'étude, le service et le témoignage, pour glorifier pleinement le nom de Christ." },
+  { title: 'Discipline', src: '/images/discipline.jpeg', desc: "Cultiver la rigueur intellectuelle et spirituelle, essentielle à une étude approfondie de la Parole et à une vie chrétienne structurée." },
+  { title: 'Prière',     src: '/images/cheminement.jpeg', desc: "Placer la communion avec Dieu au cœur de toute démarche, reconnaissant qu'elle est la source de toute sagesse et de toute force." },
+  { title: 'Fidélité',   src: '/images/croissance.jpeg', desc: "Demeurer constant dans l'engagement envers Dieu, sa Parole et l'appel reçu, quelles que soient les circonstances." },
+  { title: 'Excellence', src: '/images/excellence.jpeg', desc: "Aspirer à l'excellence en toute chose, dans l'étude, le service et le témoignage, pour glorifier pleinement le nom de Christ." },
 ]
 
 export default async function HomePage() {

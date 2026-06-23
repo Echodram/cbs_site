@@ -1,7 +1,9 @@
 {
   "permissions": {
     "allow": [
-      "Bash(git -C /home/lenovo/cbs_site/cbs_site log --oneline -5)"
+      "Bash(git -C /home/lenovo/cbs_site/cbs_site log --oneline -5)",
+      "Bash(git -C /home/lenovo/cbs_site/cbs_site add -A)",
+      "Bash(git -C /home/lenovo/cbs_site/cbs_site commit -m ' *)"
     ]
   }
 }
