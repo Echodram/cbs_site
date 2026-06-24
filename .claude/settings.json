@@ -8,7 +8,13 @@
       "Bash(git -C /home/lenovo/cbs_site/cbs_site log --oneline origin/main -5)",
       "Bash(git -C /home/lenovo/cbs_site/cbs_site remote -v)",
       "Bash(gh auth *)",
-      "Bash(git -C /home/lenovo/cbs_site/cbs_site add app/blog/\\\\[slug\\\\]/page.tsx app/evenements/\\\\[id\\\\]/page.tsx)"
+      "Bash(git -C /home/lenovo/cbs_site/cbs_site add app/blog/\\\\[slug\\\\]/page.tsx app/evenements/\\\\[id\\\\]/page.tsx)",
+      "Bash(git -C /home/lenovo/cbs_site/cbs_site log --oneline origin/main..HEAD)",
+      "Bash(git -C /home/lenovo/cbs_site/cbs_site log --oneline -8)",
+      "Bash(git -C /home/lenovo/cbs_site/cbs_site log --oneline origin/main -3)",
+      "Bash(node /tmp/claude-0/-home-lenovo-cbs-site-cbs-site/752dc2b4-e380-4599-bb67-f9b2c765ced9/scratchpad/compress.mjs)",
+      "Bash(node compress.mjs)",
+      "Bash(sudo chown -R lenovo:lenovo /home/lenovo/cbs_site/cbs_site/.git/objects)"
     ]
   }
 }
