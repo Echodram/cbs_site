@@ -344,7 +344,7 @@ export default async function HomePage() {
                       <Image src={teacher.image} alt={teacher.name} fill className="object-cover rounded-full border-4 border-brand-gold" />
                     </div>
                     <h3 className="font-bold text-brand-brown text-lg mb-1">{teacher.name}</h3>
-                    <p className="text-brand-gold text-sm font-medium mb-3">{teacher.role}</p>
+                    <p className="text-brand-gold text-sm font-medium mb-3 text-center">{teacher.role}</p>
                     <p className="text-brand-brown-dark/70 text-sm leading-relaxed text-justify">{teacher.bio}</p>
                   </div>
                 </AnimateIn>

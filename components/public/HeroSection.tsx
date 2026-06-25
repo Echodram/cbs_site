@@ -44,7 +44,7 @@ export function HeroSection() {
           transition={{ duration: 0.6, delay: 0.55, ease: EASE }}
           className="text-white text-lg md:text-xl max-w-2xl mb-10 leading-relaxed"
         >
-          Rejoignez notre communauté de croyants engagés à étudier
+          Rejoignez notre communauté d'étudiants engagés à étudier
           la Parole de Dieu et à grandir en maturité spirituelle.
         </motion.p>
 
