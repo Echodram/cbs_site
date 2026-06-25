@@ -4,7 +4,7 @@ import Link from 'next/link'
 import { ArrowLeft, Calendar, Clock, MapPin, ExternalLink } from 'lucide-react'
 import { Header } from '@/components/public/Header'
 import { Footer } from '@/components/public/Footer'
-import { getEventById, getAllEvents } from '@/lib/supabase/events'
+import { getEventById } from '@/lib/supabase/events'
 import { formatDate, formatTime } from '@/lib/utils/formatDate'
 import type { Metadata } from 'next'
 
