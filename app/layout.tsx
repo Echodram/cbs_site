@@ -28,6 +28,9 @@ export const metadata: Metadata = {
   },
   description: 'Former des serviteurs de Dieu pour les nations — une mission ancrée dans la Parole.',
   keywords: ['école biblique', 'théologie', 'formation chrétienne', 'bible'],
+  icons: {
+    icon: [{ url: '/icon.png', type: 'image/png' }],
+  },
   openGraph: {
     type: 'website',
     locale: 'fr_FR',

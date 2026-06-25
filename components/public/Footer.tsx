@@ -26,7 +26,7 @@ export function Footer() {
             <ul className="space-y-2">
               {[
                 { href: '/', label: 'Accueil' },
-                { href: '/a-propos', label: 'À propos' },
+                { href: '/#a-propos', label: 'À propos' },
                 { href: '/blog', label: 'Blog' },
                 { href: '/evenements', label: 'Événements' },
                 { href: '/contact', label: 'Contact' }
@@ -45,11 +45,11 @@ export function Footer() {
             <ul className="space-y-3 text-white/70 text-sm">
               <li className="flex items-start gap-2">
                 <MapPin className="h-4 w-4 text-brand-gold mt-0.5 flex-shrink-0" />
-                <span>123 Rue de la Lumière, Ville, Pays</span>
+                <span>En face de la Délégation Régionale de l&apos;Éducation de Base, Toket</span>
               </li>
               <li className="flex items-center gap-2">
                 <Phone className="h-4 w-4 text-brand-gold flex-shrink-0" />
-                <span>+00 000 000 0000</span>
+                <span>+237 677 083 077 - +237 696 355 036</span>
               </li>
               <li className="flex items-center gap-2">
                 <Mail className="h-4 w-4 text-brand-gold flex-shrink-0" />

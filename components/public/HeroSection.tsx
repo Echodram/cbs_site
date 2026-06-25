@@ -12,8 +12,8 @@ export function HeroSection() {
 
       {/* Image de fond */}
       <Image
-        src="/images/hero-bg.jpg"
-        alt="Carte ancienne et Bible"
+        src="/images/acceuil.png"
+        alt="Centre pour Études Bibliques"
         fill
         priority
         className="object-cover object-center"
@@ -21,7 +21,7 @@ export function HeroSection() {
       />
 
       {/* Overlay brun semi-transparent */}
-      <div className="absolute inset-0 bg-brand-brown/55" />
+      <div className="absolute inset-0 bg-brand-brown/90" />
 
       {/* Contenu principal */}
       <div className="relative z-10 flex flex-col items-center text-center px-6 max-w-4xl mx-auto">
@@ -56,7 +56,7 @@ export function HeroSection() {
           className="flex flex-col sm:flex-row items-center gap-4"
         >
           <Link
-            href="/a-propos"
+            href="/#a-propos"
             className="flex items-center gap-2 bg-brand-gold text-brand-brown font-bold text-base px-8 py-4 rounded-full hover:bg-yellow-400 transition-all duration-300 hover:scale-105 shadow-lg shadow-brand-gold/30"
           >
             <Info size={18} />

@@ -14,7 +14,17 @@
       "Bash(git -C /home/lenovo/cbs_site/cbs_site log --oneline origin/main -3)",
       "Bash(node /tmp/claude-0/-home-lenovo-cbs-site-cbs-site/752dc2b4-e380-4599-bb67-f9b2c765ced9/scratchpad/compress.mjs)",
       "Bash(node compress.mjs)",
-      "Bash(sudo chown -R lenovo:lenovo /home/lenovo/cbs_site/cbs_site/.git/objects)"
+      "Bash(sudo chown -R lenovo:lenovo /home/lenovo/cbs_site/cbs_site/.git/objects)",
+      "Bash(cp /home/lenovo/cbs_site/cbs_site/public/images/logo_cbs.png /home/lenovo/cbs_site/cbs_site/app/icon.png)",
+      "Bash(npm run dev -- --port 3001 > /tmp/cbs_site_dev.log 2>&1 & *)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3001/a-propos)",
+      "Bash(curl -s http://localhost:3001/a-propos)",
+      "Bash(pkill -f \"next dev\")",
+      "Bash(chmod -R u+w /home/lenovo/cbs_site/cbs_site/.git/objects)"
+    ],
+    "additionalDirectories": [
+      "/home/lenovo/cbs_site/cbs_site/public/images",
+      "/tmp"
     ]
   }
 }

@@ -10,6 +10,13 @@
   body {
     font-family: var(--font-inter), system-ui, sans-serif;
   }
+
+  p, li, blockquote {
+    text-align: justify;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+  }
 }
 
 @layer utilities {

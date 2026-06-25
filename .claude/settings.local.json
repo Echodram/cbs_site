@@ -5,7 +5,9 @@
       "Read(//tmp/**)",
       "Bash(sudo -u lenovo bash -c 'cd /home/lenovo/cbs_site/cbs_site && sudo chown -R lenovo:lenovo .next 2>/dev/null || true && echo \"predev OK\"')",
       "Bash(chmod +x /home/lenovo/cbs_site/cbs_site/dev.sh)",
-      "Bash(sed -i \\\\ *)"
+      "Bash(sed -i \\\\ *)",
+      "Bash(sed -i '128s/bg-brand-cream py-20/bg-white py-20/' /home/lenovo/cbs_site/cbs_site/app/page.tsx)",
+      "Bash(sed -i '310s/bg-brand-cream py-20/bg-white py-20/' /home/lenovo/cbs_site/cbs_site/app/page.tsx)"
     ],
     "additionalDirectories": [
       "/home/lenovo/cbs_site/cbs_site/app"

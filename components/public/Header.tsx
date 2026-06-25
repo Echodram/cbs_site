@@ -7,9 +7,9 @@ import { Globe, ChevronDown, Menu, X } from 'lucide-react'
 
 const navLinks = [
   { label: 'Accueil',    href: '/' },
-  { label: 'Articles',   href: '/#articles' },
-  { label: 'Événements', href: '/#evenements' },
   { label: 'À propos',   href: '/#a-propos' },
+  { label: 'Événements', href: '/#evenements' },
+  { label: 'Articles',   href: '/#articles' },
 ]
 
 export function Header() {
