@@ -29,7 +29,7 @@ export function Header() {
             className="rounded-full object-contain"
           />
           <div className="flex flex-col leading-tight">
-            <span className="font-serif font-bold text-xl text-brand-brown">
+            <span className="font-serif font-bold text-base md:text-xl text-brand-brown">
               Centre d&apos;Études Bibliques
             </span>
           </div>

@@ -107,7 +107,7 @@ export default async function HomePage() {
         {/* 3b ── Chiffres d'impact */}
         <section className="bg-brand-cream py-12">
           <div className="container mx-auto px-4 max-w-3xl">
-            <div className="grid grid-cols-3 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
               {[
                 { value: '+400', label: 'Diplômés formés' },
                 { value: '25',   label: "Ans d'existence" },
@@ -130,7 +130,7 @@ export default async function HomePage() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
               {/* Photo + identité */}
               <AnimateIn className="flex flex-col items-center text-center">
-                <div className="relative w-40 h-40 mb-6">
+                <div className="relative w-32 h-32 md:w-40 md:h-40 mb-6">
                   <Image
                     src="/images/bilog.png"
                     alt="Pasteur Theophile Bilog Gaspard"
@@ -458,7 +458,7 @@ export default async function HomePage() {
         <section className="bg-brand-brown py-20">
           <div className="container mx-auto px-4 text-center">
             <AnimateIn y={20} className="max-w-2xl mx-auto">
-              <p className="text-brand-gold text-6xl font-serif leading-none mb-4">&ldquo;</p>
+              <p className="text-brand-gold text-4xl md:text-6xl font-serif leading-none mb-4">&ldquo;</p>
               <blockquote className="font-serif text-2xl md:text-3xl text-white leading-relaxed font-medium mb-8">
                 Ta parole est une lampe à mes pieds,<br />et une lumière sur mon sentier.
               </blockquote>
