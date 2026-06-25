@@ -45,7 +45,7 @@ export function Footer() {
             <ul className="space-y-3 text-white/70 text-sm">
               <li className="flex items-start gap-2">
                 <MapPin className="h-4 w-4 text-brand-gold mt-0.5 flex-shrink-0" />
-                <span>En face de la Délégation Régionale de l&apos;Éducation de Base, Toket</span>
+                <span>Bafoussam, en face de la Délégation Régionale de l&apos;Éducation de Base, Toket</span>
               </li>
               <li className="flex items-center gap-2">
                 <Phone className="h-4 w-4 text-brand-gold flex-shrink-0" />
