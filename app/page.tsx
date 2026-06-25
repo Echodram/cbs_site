@@ -320,20 +320,20 @@ export default async function HomePage() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {[
                 {
-                  name: 'Godwe Lourna',
-                  role: 'Pasteur de Maison Globale de Prière',
+                  name: 'Pasteur Godwe Lourna',
+                  role: "Enseignant de CBS",
                   bio: "Godwe Lourna, ancien étudiant, devenu pasteur et enseignant passionné de théologie grâce à une rencontre avec Christ et une dévotion à l'étude.",
                   image: '/images/godwe.png',
                 },
                 {
-                  name: 'Bilog Theophile',
-                  role: "Pasteur de Maison Globale de Prière",
+                  name: 'Pasteur Bilog Theophile',
+                  role: "Directeur de CBS",
                   bio: "Théophile Bilog a vu sa vie changer en 1995 grâce à sa foi et à l'engagement de son épouse, le menant à diriger une école biblique.",
                   image: '/images/bilog.png',
                 },
                 {
-                  name: 'Donaldson Assontia',
-                  role: 'Pasteur de Maison Globale de Prière',
+                  name: 'Pasteur Donaldson Assontia',
+                  role: 'Enseignant de CBS',
                   bio: "Le Pasteur Donaldson croit que la sincérité d'un cœur peut transformer et équiper pour le service, avec une foi née dans son adolescence.",
                   image: '/images/donaldson.png',
                 },
