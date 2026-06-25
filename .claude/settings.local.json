@@ -9,7 +9,8 @@
       "Bash(sed -i '128s/bg-brand-cream py-20/bg-white py-20/' /home/lenovo/cbs_site/cbs_site/app/page.tsx)",
       "Bash(sed -i '310s/bg-brand-cream py-20/bg-white py-20/' /home/lenovo/cbs_site/cbs_site/app/page.tsx)",
       "Bash(curl -s http://localhost:3001/blog)",
-      "Bash(curl -s http://localhost:3001/blog/le-cheminement-spirituel-inattendu-de-godwe-lourna)"
+      "Bash(curl -s http://localhost:3001/blog/le-cheminement-spirituel-inattendu-de-godwe-lourna)",
+      "Bash(git commit -m ' *)"
     ],
     "additionalDirectories": [
       "/home/lenovo/cbs_site/cbs_site/app"
