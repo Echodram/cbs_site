@@ -9,14 +9,10 @@ import { formatDate, formatTime } from '@/lib/utils/formatDate'
 import type { Metadata } from 'next'
 
 export const revalidate = 3600
+export const dynamicParams = true
 
 interface Props {
   params: { id: string }
-}
-
-export async function generateStaticParams() {
-  const events = await getAllEvents().catch(() => [])
-  return events.map(e => ({ id: e.id }))
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {

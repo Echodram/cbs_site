@@ -5,19 +5,15 @@ import { ArrowLeft, Calendar, Tag } from 'lucide-react'
 import { Header } from '@/components/public/Header'
 import { Footer } from '@/components/public/Footer'
 import { Badge } from '@/components/ui/Badge'
-import { getPublishedArticles, getArticleBySlug } from '@/lib/supabase/articles'
+import { getArticleBySlug } from '@/lib/supabase/articles'
 import { formatDate } from '@/lib/utils/formatDate'
 import type { Metadata } from 'next'
 
 export const revalidate = 3600
+export const dynamicParams = true
 
 interface Props {
   params: { slug: string }
-}
-
-export async function generateStaticParams() {
-  const articles = await getPublishedArticles().catch(() => [])
-  return articles.map(a => ({ slug: a.slug }))
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
