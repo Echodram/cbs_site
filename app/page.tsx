@@ -133,13 +133,13 @@ export default async function HomePage() {
                 <div className="relative w-32 h-32 md:w-40 md:h-40 mb-6">
                   <Image
                     src="/images/bilog.png"
-                    alt="Pasteur Theophile Bilog Gaspard"
+                    alt="Pasteur Bilog Theophile"
                     fill
                     className="object-cover rounded-full border-4 border-brand-gold shadow-lg"
                   />
                 </div>
-                <h3 className="font-bold text-brand-brown text-xl mb-1">Bilog Theophile</h3>
-                <p className="text-brand-gold text-sm font-medium mb-6">Pasteur de Maison Globale de Prière</p>
+                <h3 className="font-bold text-brand-brown text-xl mb-1">Pasteur Bilog Theophile</h3>
+                <p className="text-brand-gold text-sm font-medium mb-6">Directeur de CBS</p>
 
                 {/* Citation encadrée */}
                 <blockquote className="bg-brand-cream rounded-2xl p-6 border-l-4 border-brand-gold text-left shadow-sm">
