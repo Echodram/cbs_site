@@ -2,7 +2,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { motion } from 'framer-motion'
-import { Info, Mail, ChevronDown } from 'lucide-react'
+import { Info, MessageCircle, ChevronDown } from 'lucide-react'
 
 const EASE = [0.22, 1, 0.36, 1] as const
 
@@ -63,13 +63,15 @@ export function HeroSection() {
             En savoir plus
           </Link>
 
-          <Link
-            href="/contact"
+          <a
+            href="https://wa.me/237677083077"
+            target="_blank"
+            rel="noopener noreferrer"
             className="flex items-center gap-2 border-2 border-white text-white font-bold text-base px-8 py-4 rounded-full hover:bg-white hover:text-brand-brown transition-all duration-300 hover:scale-105"
           >
-            <Mail size={18} />
+            <MessageCircle size={18} />
             Nous contacter
-          </Link>
+          </a>
         </motion.div>
       </div>
 
